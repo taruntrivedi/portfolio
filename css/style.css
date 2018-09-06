@@ -367,6 +367,11 @@ ul {
   height: 15%;
   width: 15%; }
 
+.work_svg:hover {
+  background-color: #e74c3c;
+  fill: white;
+  border-radius: 50%; }
+
 .work_icon svg {
   visibility: hidden; }
 
