@@ -1,0 +1,44 @@
+$font-primary:'IBM Plex Mono', monospace;
+
+*,
+*::before,
+*::after
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px = 62.5%-> 1rem =10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font-primary;
+    font-weight: 700;
+    line-height: 1.6;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-rows: [headerstart]100vh[headerend aboutstart]100vh[aboutend workstart]100vh[workend contactstart]100vh[contactend]   ;
+    //grid-template-columns:[fullstart]100vw[fullend];
+    overflow-x: hidden !important;
+
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #242424;  
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(78, 78, 78); 
+    height: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555555; 
+}
